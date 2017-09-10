@@ -21,9 +21,9 @@ int main()
 	list * newList = create_list(empty);
 
 	int result = add_to_list(newList, pet1);
-	int result2 = add_to_list(newList, pet2);
-	int result3 = add_to_list(newList, pet3);
-	int result4 = add_to_list(newList, pet4);
+	result = add_to_list(newList, pet2);
+	result = add_to_list(newList, pet3);
+	result = add_to_list(newList, pet4);
 
 	print_list(newList);
 
@@ -39,14 +39,20 @@ int main()
 
 	reset_head_val(newList, name1);
 
+	int temp = add_to_list(newList, name2);
+	temp = add_to_list(newList, name3);
+	temp = add_to_list(newList, name4);
+	temp = add_to_list(newList, name5);
+	temp = add_to_list(newList, name6);
+	temp = add_to_list(newList, name7);
+
 	print_list(newList);
 
-	int temp = add_to_list(newList, name2);
-	int temp2 = add_to_list(newList, name3);
-	int temp3 = add_to_list(newList, name4);
-	int temp4 = add_to_list(newList, name5);
-	int temp5 = add_to_list(newList, name6);
-	int temp6 = add_to_list(newList, name7);
+	pop = remove_from_list(newList);
+	printf(" \nRemoved Element: %s\n", pop);
+
+
+	result = temp + result; //This is to eliminate warnings
 	
 
 	print_list(newList);
