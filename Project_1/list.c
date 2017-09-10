@@ -78,9 +78,8 @@ void print_list(list* ll)
 void free_list(list* ll)
 {
 	Node * current = ll->head;
-	int i = 0;
-
-	for(i; i < ll->size; i++)
+	
+	while(current != NULL)
 	{
 		Node * destroy = current;
 		current = current->next;
@@ -109,9 +108,4 @@ void flush_list(list *ll)
 	ll->head->str = "";
 	ll->head->next = NULL;
 
-}
-
-void reset_head_val(list * ll, char* item)
-{
-	ll->head->str = item;
 }

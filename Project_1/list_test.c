@@ -10,12 +10,12 @@ int main()
 	char* pet3 = "Bird";
 	char* pet4 = "Fish";
 
-	char* name1 = "David";
-	char* name2 = "Joseph";
+	
+	char* name2 = "David";
 	char* name3 = "Matthew";
 	char* name4 = "Mark";
-	char* name5 = "Luke";
-	char* name6 = "John";
+	char* name5 = "Mary";
+	char* name6 = "Jane";
 	char* name7 = "Esther";
 
 	list * newList = create_list(empty);
@@ -33,11 +33,11 @@ int main()
 
 	print_list(newList);
 
+	printf(".....................FLUSHING LIST...........................\n");
 	flush_list(newList);
+	printf(".............................................................\n");
 
 	print_list(newList);
-
-	reset_head_val(newList, name1);
 
 	int temp = add_to_list(newList, name2);
 	temp = add_to_list(newList, name3);
@@ -57,13 +57,10 @@ int main()
 
 	print_list(newList);
 
+
+	printf(".....................FREEING LIST...........................\n");
 	free_list(newList);
-
-	print_list(newList);
-
-
-
-
+	printf(".............................................................\n");
 
 	return 0;
 }

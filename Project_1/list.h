@@ -56,6 +56,6 @@ void flush_list(list* ll);
 */
 void free_list(list *ll);
 
-void reset_head_val(list * ll, char* item);
+
 
 #endif
