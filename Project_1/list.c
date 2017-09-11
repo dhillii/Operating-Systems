@@ -78,7 +78,7 @@ void print_list(list* ll)
 void free_list(list* ll)
 {
 	Node * current = ll->head;
-	
+
 	while(current != NULL)
 	{
 		Node * destroy = current;
@@ -95,16 +95,20 @@ void flush_list(list *ll)
 
 	
 
-	for(i; i < ll->size; i++)
+	/*for(i; i < ll->size; i++)
 	{
 		
+		
+		
+		
+	}*/
+
+	while(current != NULL)
+	{
 		Node * destroy = current;
 		current = current->next;
 		destroy_node(destroy);
-		
-		
 	}
-
 	ll->head->str = "";
 	ll->head->next = NULL;
 
